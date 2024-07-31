@@ -1,29 +1,39 @@
 :root {
   --heading-font: "Space Grotesk", sans-serif;
   --body-font: "Montserrat", sans-serif;
+  --primary-color: #8ec489;
+  --secondary-color: #705568;
 }
 
-.heading-name,
-h2,
-.heading-job,
-.heading-location {
+.h1,
+.h2,
+.h3,
+.h4 {
   font-family: var(--heading-font);
   font-weight: 700px;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
-.heading-name {
+.h1 {
   font-size: 40px;
   margin-top: 100px;
   line-height: 0.8;
+  margin: 40px;
 }
 
-.heading-job {
+.h3 {
   font-size: 80px;
 }
-.heading-location {
+.h4 {
   font-size: 20px;
 }
 .navbar-logo {
-  max-width: 50px;
+  max-width: 70px;
+}
+.navbar-custom {
+  background-color: white;
+}
+.mail-icon {
+  font-size: 40px;
 }
