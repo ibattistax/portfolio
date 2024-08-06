@@ -1,32 +1,40 @@
 :root {
   --heading-font: "Space Grotesk", sans-serif;
   --body-font: "Montserrat", sans-serif;
-  --primary-color: #8ec489;
+  --primary-color: #86c802;
   --secondary-color: #705568;
 }
 
-.h1,
-.h2,
-.h3,
-.h4 {
+.heading1,
+.heading2,
+.heading3,
+.heading4 {
   font-family: var(--heading-font);
   font-weight: 700px;
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-.h1 {
+.heading1 {
   font-size: 40px;
   margin-top: 100px;
   line-height: 0.8;
   margin: 40px;
 }
 
-.h3 {
+.heading3 {
   font-size: 80px;
 }
-.h4 {
+.heading4 {
   font-size: 20px;
+}
+.info-paragraph {
+  font-family: var(--body-font);
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  border: var(--primary-color) solid 10px;
+  border-radius: 10px;
 }
 .navbar-logo {
   max-width: 70px;
