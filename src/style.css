@@ -1,8 +1,17 @@
 :root {
   --heading-font: "Space Grotesk", sans-serif;
   --body-font: "Montserrat", sans-serif;
+  --bg-color: rgb(134, 200, 2, 0.1);
   --primary-color: #86c802;
   --secondary-color: #705568;
+  --shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.hero {
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
 }
 
 .heading1,
@@ -11,8 +20,6 @@
 .heading4 {
   font-family: var(--heading-font);
   font-weight: 700px;
-  display: flex;
-  justify-content: center;
   padding: 10px;
 }
 .heading1 {
@@ -28,12 +35,20 @@
 .heading4 {
   font-size: 20px;
 }
+.btn-branding {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: black;
+  border: none;
+  box-shadow: var(--shadow);
+  margin-top: 13px;
+}
 .info-paragraph {
   font-family: var(--body-font);
   text-align: center;
   padding: 30px;
   margin: 30px;
-  border: var(--primary-color) solid 10px;
   border-radius: 10px;
 }
 .navbar-logo {
@@ -42,6 +57,6 @@
 .navbar-custom {
   background-color: white;
 }
-.mail-icon {
+.contact-icon {
   font-size: 40px;
 }
