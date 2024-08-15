@@ -44,12 +44,21 @@
   box-shadow: var(--shadow);
   margin-top: 13px;
 }
+.btn-branding:hover {
+  color: white;
+}
 .info-paragraph {
   font-family: var(--body-font);
   text-align: center;
   padding: 30px;
   margin: 30px;
   border-radius: 10px;
+}
+.card {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  margin: 20px;
 }
 .navbar-logo {
   max-width: 70px;
