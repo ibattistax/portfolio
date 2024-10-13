@@ -8,12 +8,7 @@
   --shadow: 0 1.5px 15px rgb(0 0 0 / 0.1);
 }
 
-.hero {
-  background-color: var(--bg-color-2);
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 50px;
-}
+/* DIRECT HTML ELEMENTS */
 
 h1,
 h2,
@@ -25,49 +20,74 @@ body {
   font-family: var(--body-font);
 }
 h1 {
-  font-size: 40px;
-  margin-top: 100px;
   line-height: 0.8;
-  margin: 40px;
+  font-size: 70px;
 }
 h2 {
-  font-size: 48px;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 300;
 }
 p {
   font-size: 16px;
   font-weight: normal;
 }
-h3 {
-  font-size: 80px;
-}
-h4 {
-  font-size: 20px;
-}
+/* BRANDING ELEMENTS */
+
 .btn-branding {
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 4px;
-  background-color: var(--primary-color);
-  color: black;
-  border: none;
-  box-shadow: var(--shadow);
-  margin-top: 13px;
-}
-.btn-branding:hover {
   color: white;
-}
-.btn-branding-outline {
-  padding: 15px 30px;
-  border-radius: 4px;
-  line-height: 27px;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   box-shadow: var(--shadow);
   text-decoration: none;
 }
+.btn-branding:hover {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  transition: 200ms;
+}
+.btn-branding-outline {
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
 .btn-branding-outline:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   transition: 200ms;
+}
+.content-image {
+  border-radius: 4px;
+  margin: 20px;
+}
+.content {
+  padding: 30px;
+  line-height: 1.75;
+}
+.navbar-logo {
+  max-width: 70px;
+}
+.navbar-custom {
+  background-color: white;
+}
+/* HOMEPAGE SPECIFIC ELEMENTS */
+.hero {
+  background-color: var(--bg-color-2);
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
 }
 .info-paragraph {
   font-family: var(--body-font);
@@ -83,35 +103,31 @@ h4 {
 .project-description {
   padding: 120px 60px;
 }
-.card {
-  padding: 10px;
-  background-color: var(--primary-color);
-  border: none;
-  margin: 20px;
-}
-.navbar-logo {
-  max-width: 70px;
-}
-.navbar-custom {
-  background-color: white;
-}
+
+/* CONTACT SPECIFIC ELEMENTS */
+
 .contact-icon {
   font-size: 40px;
 }
+/* ABOUT PAGE SPECIFIC ELEMENTS */
 
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
   .project-description {
     padding: 0;
     text-align: center;
   }
   h2 {
-    font-size: 25px;
+    font-size: 35px;
   }
   h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
   h3 {
-    font-size: 40px;
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
   }
   p {
     font-size: 14px;
@@ -119,7 +135,12 @@ h4 {
   a {
     font-size: 14px;
   }
-  .btn-branding-outline {
-    padding: 10px 15px;
+  .content {
+    text-align: center;
+  }
+  .content-image {
+    /* want to center image */
+    display: block;
+    margin: 0 auto;
   }
 }
