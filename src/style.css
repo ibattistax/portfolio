@@ -81,6 +81,11 @@ p {
   font-weight: bold;
   margin-top: 20px;
 }
+.content-box {
+  margin-top: 100px;
+  background-color: var(--bg-color-2);
+  padding: 40px;
+}
 .navbar-logo {
   max-width: 70px;
 }
