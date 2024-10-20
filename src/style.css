@@ -23,16 +23,9 @@ body {
   max-height: 70px;
 }
 nav {
-  padding: 20px 0;
   background-color: white;
 }
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-nav img {
-  display: flex;
-}
+
 nav li {
   display: inline;
   list-style: none;
@@ -44,9 +37,8 @@ nav a {
   color: black;
   transition: all 100ms ease-in-out;
 }
-nav li.active a {
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 4.5px;
+nav li a.active {
+  font-weight: bold;
 }
 h1 {
   line-height: 0.8;
