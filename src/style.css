@@ -1,10 +1,10 @@
 :root {
   --heading-font: "Space Grotesk", sans-serif;
   --body-font: "Montserrat", sans-serif;
-  --bg-color-1: #f2f9e6;
-  --bg-color-2: #eee5fa;
-  --primary-color: #89cc04;
-  --secondary-color: #4704cc;
+  --bg-color-1: #c9dcb7;
+  --bg-color-2: #f7eef4;
+  --primary-color: #698159;
+  --secondary-color: #cf76a9;
   --shadow: 0 1.5px 15px rgb(0 0 0 / 0.1);
 }
 
@@ -23,14 +23,15 @@ body {
   max-height: 70px;
 }
 nav {
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.7);
+  max-height: 80px;
 }
 
 nav li {
   display: inline;
   list-style: none;
   margin-left: 15px;
-  line-height: 30px;
+  line-height: 20px;
 }
 nav a {
   text-decoration: none;
@@ -138,22 +139,28 @@ p {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   transition: width 0.25s ease-in-out;
 }
 .link:hover::before {
   width: 100%;
-}
-.navbar-logo {
-  max-width: 70px;
 }
 .navbar-custom {
   background-color: white;
 }
 i {
   font-size: 20px;
-  padding: 5px;
-  top: 2;
+  padding: 10px;
+  color: var(--primary-color);
+  background-color: var(--bg-color-1);
+  border-radius: 50%;
+}
+.social-links {
+  margin: 30px 15px;
+}
+.email-link {
+  font-weight: bold;
+  padding: 7px;
 }
 /* HOMEPAGE SPECIFIC ELEMENTS */
 .hero {
