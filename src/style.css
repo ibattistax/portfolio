@@ -184,7 +184,9 @@ i:hover {
 .contact-icon {
   font-size: 40px;
 }
-
+.footer-blurb {
+  font-size: 12px;
+}
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
   .link::before {
