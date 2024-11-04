@@ -23,10 +23,10 @@ body {
   max-height: 70px;
 }
 nav {
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255, 0.8);
   max-height: 80px;
+  margin-bottom: 10px;
 }
-
 nav li {
   display: inline;
   list-style: none;
@@ -42,15 +42,17 @@ nav li a.active {
   font-weight: bold;
 }
 h1 {
-  line-height: 0.8;
-  font-size: 70px;
+  font-size: 90px;
+  margin-bottom: 0;
 }
 h2 {
+  margin-top: 0;
   font-size: 40px;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 80px;
+  font-weight: 100;
 }
 h4 {
   font-size: 25px;
@@ -183,17 +185,29 @@ i:hover {
 }
 .img-container {
   padding: 15px;
-  background-color: var(--bg-color-2);
+  border: 5px black solid;
+  border-radius: 4px;
 }
 .project-description {
   padding: 120px 60px;
 }
-
+/* .homepage-content {
+  background: linear-gradient(90deg, var(--bg-color-2) 50%, white 50%);
+} */
 .contact-icon {
   font-size: 40px;
 }
 
 /* MEDIA QUERIES */
+
+@media (max-width: 576px) {
+  .navbar-collapse {
+    margin: 0 auto;
+    padding: 10px;
+
+    background-color: rgb(255, 255, 255, 0.8);
+  }
+}
 @media (max-width: 992px) {
   .project-description {
     padding: 0;
@@ -206,7 +220,7 @@ i:hover {
     font-size: 50px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 40px;
   }
   h4 {
     font-size: 20px;
