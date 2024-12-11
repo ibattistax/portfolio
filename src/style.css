@@ -174,6 +174,9 @@ i:hover {
   padding: 15px;
   border: 5px black solid;
   border-radius: 4px;
+  height: 317px;
+  width: 416px;
+  object-fit: cover;
 }
 .project-description {
   padding: 120px 60px;
