@@ -172,14 +172,15 @@ i:hover {
 }
 .img-container {
   padding: 15px;
-  border: 5px black solid;
+  border: 1px rgb(221, 221, 221, 0.7) solid;
   border-radius: 4px;
-  height: 400px;
-  width: 420px;
+  height: 340px;
+  width: 400px;
   object-fit: cover;
+  box-shadow: var(--shadow);
 }
 .project-description {
-  padding: 120px 60px;
+  padding: 60px 40px;
 }
 /* .homepage-content {
   background: linear-gradient(90deg, var(--bg-color-2) 50%, white 50%);
